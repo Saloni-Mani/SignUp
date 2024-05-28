@@ -6,12 +6,12 @@
 <div class="container">
     <div class="row">
         <div class="clo-12">
-            <div class="alert alert-info">this is home page</div>
+            <div class="alert alert-info">This is Home Page</div>
 
             {% if user.is_authenticated %} 
             
-                Hi {{ user.full_name }}, Welcome to My site!
-                <a href="logout/" class="btn btn-danger">Logout</a> 
+                Hi {{ user.full_name }}, Welcome to J.A.N.A.K.K !
+                <a href="{% url 'signup' %}" class="btn btn-danger">Logout</a>
 
             {% else %}
 

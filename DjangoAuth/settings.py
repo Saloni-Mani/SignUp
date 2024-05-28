@@ -42,7 +42,7 @@ INSTALLED_APPS = [
 
 ]
 
-AUTH_USER_MODEL = 'authen.CustomUser'
+AUTH_USER_MODEL = 'authen.customuser'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -82,9 +82,9 @@ DATABASES = {
 
      'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'atikGohel',
+        'NAME': 'salonimani2',
         'USER' : 'root',
-        'PASSWORD' : '',
+        'PASSWORD' : 'kirti@28++',
         'HOST': 'localhost',
         'PORT' : '3306',
     }

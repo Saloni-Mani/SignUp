@@ -4,14 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}{% endblock title %} | Atik Gohel</title>
+    <title>{% block title %}{% endblock title %} | J.A.N.A.K.K</title>
     <link rel="stylesheet" href="{% static 'css/bootstrap.css'%}">
+    <link rel="stylesheet" href="{% static 'css/navBar.css'%}">
 </head>
 <body>
-    <div class="container mt-5">
-        <h3 class="text-center alert alert-danger">Login and Singup Example</h3>
-    </div>
 
+    <nav class="NavbarItems">
+        <div class="left">
+            <img src="logo.jpg">
+            <h1 class="navbar-logo">JANAKK</h1>
+        </div> 
+        {% comment %} <div class="menu-icons" onClick={handleClick}>
+            <i className={state ? "fas fa-times" : "fas fa-bars"}></i>
+        </div>  {% endcomment %}
+        <ul class ="nav-menu">
+            <li><i class="fa-solid fa-house-user"></i>Home</li>
+            <li><i class="fa-solid fa-circle-info"></i>About</li>
+            <li><i class="fa-solid fa-briefcase"></i>Service</li>
+            <li><i class="fa-solid fa-address-book"></i>Contact</li>
+            <button>Sign Up</button>
+        </ul>
+    </nav>
+    {% comment %} <div class="container mt-5">
+        <h3 class="text-center alert alert-danger">SIGN-UP  TO J.A.N.A.K.K TODAY AND EXPLORE THE BEAUTY OF UTTARPRADESH</h3>
+    </div> {% endcomment %}
     {% block body %}{% endblock body %}
 
     <script src=" {% static 'js/bootstrap.js' %}"></script>
